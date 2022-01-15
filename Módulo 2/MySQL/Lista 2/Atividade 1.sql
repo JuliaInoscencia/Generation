@@ -1,5 +1,5 @@
-# Crie um banco de dados para um serviço de um game Online , o nome do banco deverá ter o seguinte nome db_generation_game_online, onde, o sistema trabalhará com as informações dos personagens desse game. 
-# O sistema trabalhará com 2 tabelas tb_personagem e tb_classe.
+# Crie um banco de dados para um serviço de um game Online , o nome do banco deverá ter o seguinte nome db_generation_game_online, onde, o sistema trabalhará 
+#com as informações dos personagens desse game. O sistema trabalhará com 2 tabelas tb_personagem e tb_classe.
 
 CREATE DATABASE db_generation_game_online;
 
@@ -15,7 +15,8 @@ CREATE TABLE tb_classe(
     PRIMARY KEY(nome_classe)
 );
 
-#Crie uma tabela tb_personagem e utilizando a habilidade de abstração e determine 5 atributos relevantes dos personagem para se trabalhar com o serviço desse game Online (não esqueça de criar a foreign key de tb_classe nesta tabela).
+#Crie uma tabela tb_personagem e utilizando a habilidade de abstração e determine 5 atributos relevantes dos personagem para se trabalhar com o serviço desse 
+#game Online (não esqueça de criar a foreign key de tb_classe nesta tabela).
 
 CREATE TABLE tb_personagem(
     nome VARCHAR(20) PRIMARY KEY,
@@ -63,7 +64,8 @@ SELECT * FROM tb_personagem WHERE nome LIKE "%C%";
 
 #Faça um um select com Inner join entre tabela classe e personagem.
 
-SELECT tb_personagem.nome, tb_personagem.arma, tb_personagem.dano, tb_personagem.defesa, tb_classe.nome_classe, tb_classe.caracteristica, tb_classe.tipo_combate FROM tb_personagem
+SELECT tb_personagem.nome, tb_personagem.arma, tb_personagem.dano, tb_personagem.defesa, tb_classe.nome_classe, tb_classe.caracteristica, tb_classe.tipo_combate 
+FROM tb_personagem
 INNER JOIN tb_classe on tb_classe.nome_classe = tb_personagem.fk_classe;
 
 #Faça um select onde traga todos os personagem de uma classe específica

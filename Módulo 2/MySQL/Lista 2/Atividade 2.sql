@@ -1,5 +1,5 @@
-#Crie um banco de dados para um serviço de pizzaria de uma empresa, o nome do banco deverá ter o seguinte nome db_pizzaria_legal, onde o sistema trabalhará com as informações dos produtos desta empresa.
-#O sistema trabalhará com 2 tabelas tb_pizza e tb_categoria.
+#Crie um banco de dados para um serviço de pizzaria de uma empresa, o nome do banco deverá ter o seguinte nome db_pizzaria_legal, onde o sistema trabalhará com as 
+#informações dos produtos desta empresa. O sistema trabalhará com 2 tabelas tb_pizza e tb_categoria.
 
 CREATE DATABASE db_pizzaria_legal;
 
@@ -15,7 +15,8 @@ CREATE TABLE tb_categoria(
     PRIMARY KEY(id_categoria)
 );
 
-#Crie uma tabela de pizza e utilizando a habilidade de abstração e determine 5 atributos relevantes dos tb_pizza para se trabalhar com o serviço dessa pizzaria(não esqueça de criar a foreign key de tb_categoria nesta tabela).
+#Crie uma tabela de pizza e utilizando a habilidade de abstração e determine 5 atributos relevantes dos tb_pizza para se trabalhar com o serviço dessa pizzaria
+#(não esqueça de criar a foreign key de tb_categoria nesta tabela).
 
 CREATE TABLE tb_pizza(
 	id_pizza INT NOT NULL AUTO_INCREMENT,
@@ -70,4 +71,4 @@ INNER JOIN tb_categoria on tb_categoria.id_categoria = tb_pizza.fk_categoria;
 
 #Faça um select onde traga todos os Produtos de uma categoria específica (exemplo todos os produtos que são pizza doce).
 
-SELECT * FROM tb_pizza WHERE fk_categoria != 2 AND fk_categoria <> 5;
+SELECT * FROM tb_pizza WHERE fk_categoria != 2 AND id_categoria <> 5;
