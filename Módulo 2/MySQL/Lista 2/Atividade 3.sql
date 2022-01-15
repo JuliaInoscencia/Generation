@@ -68,4 +68,4 @@ INNER JOIN tb_categoria ON tb_categoria.id_categoria = tb_produto.fk_categoria;
 
 #Faça um select onde traga todos os Produtos de uma categoria específica (exemplo todos os produtos que são cosméticos).
 
-SELECT * FROM tb_produto WHERE fk_categoria = 3;
+SELECT * FROM tb_produto WHERE fk_categoria = 3

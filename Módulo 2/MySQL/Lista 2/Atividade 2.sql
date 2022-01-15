@@ -71,4 +71,4 @@ INNER JOIN tb_categoria on tb_categoria.id_categoria = tb_pizza.fk_categoria;
 
 #Faça um select onde traga todos os Produtos de uma categoria específica (exemplo todos os produtos que são pizza doce).
 
-SELECT * FROM tb_pizza WHERE fk_categoria != 2 AND id_categoria <> 5;
+SELECT * FROM tb_pizza WHERE fk_categoria != 2 AND id_categoria <> 5
