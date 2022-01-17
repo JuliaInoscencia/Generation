@@ -48,9 +48,9 @@ VALUES
 ("Banana Nanica",2.75,18,"2022/01/24",2),
 ("Alface Lisa",2.50,16,"2022/01/22",1);
 
-#Faça um select que retorne os Produtos com o valor maior do que 50 reais.
+#Faça um select que retorne os Produtos com o valor maior do que 4 reais.
 
-SELECT * FROM tb_produto WHERE valor > 50;
+SELECT * FROM tb_produto WHERE valor > 4;
 
 #Faça um select trazendo os Produtos com valor entre 3 e 60 reais.
 
