@@ -1,0 +1,20 @@
+.tm-social {
+  width: 50px;
+  height: 50px;
+}
+.color {
+  background-color: #fd7e14;
+}
+.fundo {
+  background-color: #ffc604;
+}
+.nav-item {
+  margin: 0 20px;
+}
+.text-justify {
+  text-align: justify;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
